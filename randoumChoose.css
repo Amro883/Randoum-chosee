@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: system-ui;
+    background: linear-gradient(rgb(131, 116, 116), rgba(131, 116, 116, .700));
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main {
+    position: relative;
+    top: 20vh;
+    background: transparent;
+    left: 0%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.input {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .input textarea {
+    height: 10vh;
+    max-width: 300px;
+
+}
+
+.main .input textarea:focus {
+    outline: 0;
+}
+
+.main .input p {
+    font-size: 16px;
+}
+
+.main .tags {
+    width: 80vw
+}
+
+
+.main .tags .tag,
+.main .tags .dark {
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.main .tags .ligth {
+    background-color: rebeccapurple;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFF;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width:480px) {
+    .main{
+        top:0px;
+        left:4%;
+        height: 50vh;
+    }
+    
+}
